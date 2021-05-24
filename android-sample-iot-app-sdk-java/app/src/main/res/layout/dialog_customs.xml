@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginRight="@dimen/dp_20"
+    android:layout_marginLeft="@dimen/dp_20"
+    android:background="@drawable/rl_shape">
+
+
+        <TextView
+            android:id="@+id/dialog_tips"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/set_user_nick_name"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/sp_14" />
+
+        <EditText
+            android:id="@+id/edit_text_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:paddingStart="@dimen/dp_3"
+            android:paddingEnd="@dimen/dp_3"
+            android:hint="@string/dialog_input_hint"
+            android:layout_below="@id/dialog_tips"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textSize="@dimen/sp_14"
+            android:background="@drawable/edittext_border" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/color_line"
+            android:layout_above="@id/ll"/>
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="@string/Cancel"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/text_color"
+                android:gravity="center"/>
+            <View
+                android:layout_width="0.5dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:background="@color/text_color"/>
+            <TextView
+                android:id="@+id/ok"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="@string/OK"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/tuya_color"/>
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>

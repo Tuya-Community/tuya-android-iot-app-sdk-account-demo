@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ll" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/tuya_color</item>
+    <item name="colorPrimaryDark">@color/start_orange</item>
+    <item name="colorAccent">@color/start_orange</item>
+    </style>
+
+</resources>
